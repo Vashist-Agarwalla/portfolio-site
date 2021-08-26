@@ -4,10 +4,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        main: "#202124"
+        main: "#202124",
+        secondary: '#FFA588'
       },
       fontFamily: {
         'display': ['Poppins']
+      },
+      textColor: {
+        'secondary': '#FFA588'
       }
     },
   },
