@@ -12,6 +12,9 @@ module.exports = {
       },
       textColor: {
         'secondary': '#FFA588'
+      },
+      flex: {
+        '3': '3 3 0%',
       }
     },
   },
