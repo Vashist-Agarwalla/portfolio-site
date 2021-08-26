@@ -2,13 +2,17 @@ module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
-    colors: {
-      primary: "#202124"
-    }
+    extend: {
+      colors: {
+        main: "#202124"
+      },
+      fontFamily: {
+        'display': ['Poppins']
+      }
+    },
   },
   variants: {
-    extend: {},
+    extend: { },
   },
   plugins: [],
 }
