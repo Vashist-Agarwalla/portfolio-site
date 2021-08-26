@@ -1,7 +1,7 @@
 const Home = () => {
     return (
-        <div className='h-full w-screen flex'>
-            <div className='flex-1'>
+        <div className='h-screen w-full lg:flex'>
+            <div className='hidden lg:block lg:flex-1'>
                 <img
                     src='Line-1.png'
                     className='mt-32 h-60 ml-40'
@@ -24,16 +24,20 @@ const Home = () => {
                 />
                 {/* Hello */}
             </div>
-            <div className='flex-3 font-semibold mt-80 ml-32'>
-                <div className='text-white text-2xl pt-4'>
+            <div className='lg:flex-3 font-semibold pt-40 lg:pt-80 lg:ml-32 ml-8 lg:ml-0'>
+                <div className='text-white text-2xl md:text-3xl lg:text-2xl pt-4'>
                     Hello, I am
                 </div>
-                <div className='text-secondary text-6xl mt-2'>
-                    VASHIST AGARWALLA
+                <div className='text-secondary text-5xl md:text-6xl mt-2'>
+                    VASHIST
+                    <br />
+                    AGARWALLA
                 </div>
             </div>
-            <div className='flex-3 pr-28 my-40 w-56'>
-                <img src='Hacker-bro-1.png' />
+            <div className='lg:flex-3 lg:pr-28 mx-4 md:mx-16 lg:mx-4 py-12 md:py-4 lg:py-40 md:w-10/12 lg:w-56'>
+                <img
+                    src='Hacker-bro-1.png'
+                />
             </div>
         </div>
     )
