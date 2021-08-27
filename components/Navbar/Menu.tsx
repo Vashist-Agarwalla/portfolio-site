@@ -3,16 +3,16 @@ const Menu = () => {
         <div className='absolute right-0 '>
             <div className="grid grid-cols-4 gap-0 m-auto">
                 <div className="mx-12">
-                    Home
+                    <a href='/'>Home</a>
                 </div>
                 <div className="m-auto ">
-                    About
+                    <a href='/#about'>About</a>
                 </div>
                 <div className="m-auto ">
-                    Services
+                    <a href='/#projects'>Projects</a>
                 </div>
                 <div className="m-auto ">
-                    Contact
+                    <a href='/#contact'>Contact</a>
                 </div>
             </div>
         </div>
