@@ -1,6 +1,6 @@
 const AboutImage = () => {
     return(
-        <div className='flex-1'>
+        <div className='flex-2'>
 
         </div>
     )
