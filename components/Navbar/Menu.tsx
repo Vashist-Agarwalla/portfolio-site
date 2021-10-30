@@ -1,7 +1,7 @@
 const Menu = () => {
     return (
-        <div className='absolute right-0 '>
-            <div className="grid grid-cols-4 gap-0 m-auto">
+        <div className='hidden lg:contents'>
+            <div className="grid grid-cols-4 gap-0 m-auto mr-0">
                 <div className="mx-12">
                     <a href='/'>Home</a>
                 </div>
