@@ -10,7 +10,7 @@ const Menu = (props: any) => {
                         <Logo />
                     </div>
                     <div className="mx-auto my-4">
-                        <Link href="/">
+                        <Link href="/#">
                             <a>Home</a>
                         </Link>
                     </div>
@@ -37,7 +37,7 @@ const Menu = (props: any) => {
         <div className='hidden lg:contents'>
             <div className="grid grid-cols-4 gap-0 m-auto mr-0">
                 <div className="mx-12">
-                    <Link href="/">
+                    <Link href="/#">
                         <a>Home</a>
                     </Link>
                 </div>

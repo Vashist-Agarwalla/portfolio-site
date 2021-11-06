@@ -3,7 +3,7 @@ import AboutText from "./Text";
 
 const About = () => {
     return(
-        <div className='lg:flex'>
+        <div className='lg:flex' id='about'>
             <AboutImage />
             <AboutText />
         </div>
