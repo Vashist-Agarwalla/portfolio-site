@@ -1,4 +1,5 @@
 import Logo from "./Logo";
+import Link from 'next/link';
 
 const Menu = (props: any) => {
     if (props.dropdown) {
@@ -9,40 +10,56 @@ const Menu = (props: any) => {
                         <Logo />
                     </div>
                     <div className="mx-auto my-4">
-                        <a href='/'>Home</a>
+                        <Link href="/">
+                            <a>Home</a>
+                        </Link>
                     </div>
                     <div className="mx-auto my-4">
-                        <a href='/#about'>About</a>
+                        <Link href="/#about">
+                            <a>About</a>
+                        </Link>
                     </div>
                     <div className="mx-auto my-4">
-                        <a href='/#projects'>Projects</a>
+                        <Link href='/#projects'>
+                            <a>Projects</a>
+                        </Link>
                     </div>
                     <div className="mx-auto my-4">
-                        <a href='/#contact'>Contact</a>
+                        <Link href='/#contact'>
+                            <a>Contact</a>
+                        </Link>
                     </div>
                 </div>
             </div>
         )
     } else {
-        return (
-            <div className='hidden lg:contents'>
-                <div className="grid grid-cols-4 gap-0 m-auto mr-0">
-                    <div className="mx-12">
-                        <a href='/'>Home</a>
-                    </div>
-                    <div className="m-auto ">
-                        <a href='/#about'>About</a>
-                    </div>
-                    <div className="m-auto ">
-                        <a href='/#projects'>Projects</a>
-                    </div>
-                    <div className="m-auto ">
-                        <a href='/#contact'>Contact</a>
-                    </div>
+    return (
+        <div className='hidden lg:contents'>
+            <div className="grid grid-cols-4 gap-0 m-auto mr-0">
+                <div className="mx-12">
+                    <Link href="/">
+                        <a>Home</a>
+                    </Link>
+                </div>
+                <div className="m-auto ">
+                    <Link href="/#about">
+                        <a>About</a>
+                    </Link>
+                </div>
+                <div className="m-auto ">
+                    <Link href='/#projects'>
+                        <a>Projects</a>
+                    </Link>
+                </div>
+                <div className="m-auto ">
+                    <Link href='/#contact'>
+                        <a>Contact</a>
+                    </Link>
                 </div>
             </div>
-        )
-    }
+        </div>
+    )
+}
 }
 
 export default Menu;
