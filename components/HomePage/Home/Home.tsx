@@ -27,7 +27,7 @@ const Home = () => {
                 <div className='text-white text-2xl sm:text-3xl lg:text-2xl pt-4'>
                     Hello, I am
                 </div>
-                <div className='text-secondary text-5xl sm:text-6xl lg:text-5xl xl:text-6xl mt-2'>
+                <div className='text-secondary text-4xl xs:text-5xl sm:text-6xl lg:text-5xl xl:text-6xl mt-2'>
                     VASHIST
                     <br />
                     AGARWALLA
