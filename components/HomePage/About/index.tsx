@@ -1,11 +1,11 @@
 import AboutImage from "./AboutImage";
 import AboutText from "./Text";
 
-const About = () => {
-    return(
+const About = ({ about }) => {
+    return (
         <div className='lg:flex' id='about'>
             <AboutImage />
-            <AboutText />
+            <AboutText about={about} />
         </div>
     )
 }

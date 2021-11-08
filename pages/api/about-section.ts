@@ -9,7 +9,7 @@ const handler = nc()
             .collection("About")
             .find({})
             .toArray()
-        res.json(data)
+        res.json(data[0])
     })
 
 export default handler;
