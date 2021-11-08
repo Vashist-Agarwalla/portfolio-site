@@ -12,7 +12,7 @@ const HomePage = ({ about }: any) => {
 }
 
 export const getStaticProps = async () => {
-  const data = await axios.get('http://localhost:3000/api/about-section');
+  const data = await axios.get(`${process.env.DOMAIN}/api/about-section`);
   return {
     props: {
       about: data.data
