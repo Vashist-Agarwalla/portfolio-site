@@ -1,8 +1,8 @@
 import { MongoClient } from 'mongodb'
 
-const MONGODB_URI = process.env.MONGO_URI
+const MONGODB_URI = process.env.MONGODB_URI || ''
 
-export let connectToDatabase = () => {
+export let connectToDatabase = async () => {
     const opts = {
         useNewUrlParser: true,
         useUnifiedTopology: true,
