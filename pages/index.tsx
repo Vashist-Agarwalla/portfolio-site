@@ -11,7 +11,7 @@ const HomePage = ({ about }: any) => {
   )
 }
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const data = await axios.get(`${process.env.DOMAIN}/api/about-section`);
   return {
     props: {
@@ -19,4 +19,5 @@ export const getStaticProps = async () => {
     }
   }
 }
+
 export default HomePage;
