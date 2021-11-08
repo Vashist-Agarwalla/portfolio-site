@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 const Navbar = () => {
 
-    const [navCSS, setNavCSS] = useState("pl-8 lg:pl-32 py-10 lg:pr-24");
+    const [navCSS, setNavCSS] = useState("pl-8 lg:pl-32 bg-main py-10 lg:pr-24");
     const [select, setSelect] = useState(false);
 
     const controlNavbar = () => {
@@ -17,7 +17,7 @@ const Navbar = () => {
         } else if (select) {
             setNavCSS("pl-8 lg:pl-36 pt-10 bg-main filter drop-shadow-2xl lg:drop-shadow-xl")
         } else {
-            setNavCSS("pl-8 lg:pl-32 py-10 lg:pr-24")
+            setNavCSS("pl-8 lg:pl-32 bg-main py-10 lg:pr-24")
         }
     }
 
