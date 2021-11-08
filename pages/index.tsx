@@ -2,7 +2,7 @@ import About from '../components/HomePage/About';
 import Home from '../components/HomePage/Home';
 import axios from 'axios';
 
-const HomePage = ({ about }) => {
+const HomePage = ({ about }: any) => {
   return (
     <div className='bg-main'>
       <Home />
