@@ -3,11 +3,7 @@ import { MongoClient } from 'mongodb'
 const MONGODB_URI = process.env.MONGODB_URI || ''
 
 export let connectToDatabase = async () => {
-    const opts = {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-    }
-    return MongoClient.connect(MONGODB_URI, opts).then((client) => {
+    return MongoClient.connect(MONGODB_URI).then((client) => {
         return {
             client,
             db: client.db(),
@@ -29,12 +25,7 @@ if (process.env.NODE_ENV !== 'production') {
         }
 
         if (!cached.promise) {
-            const opts = {
-                useNewUrlParser: true,
-                useUnifiedTopology: true,
-            }
-
-            cached.promise = MongoClient.connect(MONGODB_URI, opts).then((client) => {
+            cached.promise = MongoClient.connect(MONGODB_URI).then((client) => {
                 return {
                     client,
                     db: client.db(),
