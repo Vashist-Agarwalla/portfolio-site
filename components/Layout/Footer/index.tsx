@@ -1,11 +1,11 @@
 const Footer = () => {
     return (
-        <div className="flex bg-footer h-28 text-white font-display">
-            <div className="flex-1 text-center text-xl py-10">
+        <div className="lg:flex bg-footer lg:h-28 text-white font-display">
+            <div className="lg:flex-1 text-center text-xl py-6 lg:py-10">
                 Made by Vashist Agarwalla
             </div>
-            <div className="flex-1 py-6">
-                <div className="grid justify-items-center grid-cols-3 ml-72 mr-32">
+            <div className="lg:flex-1 pt-0 pb-4 lg:py-6">
+                <div className="grid justify-items-center grid-cols-3 mx-4 md:mx-56 lg:ml-72 lg:mr-32">
                     <div>
                         <a
                             href="https://github.com/Vashist-Agarwalla"
