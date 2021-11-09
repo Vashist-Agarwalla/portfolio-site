@@ -45,6 +45,7 @@ const Navbar = () => {
                     <button className="lg:hidden absolute right-10" onClick={controlSelect}>
                         <img
                             src="https://img.icons8.com/material-outlined/24/ffffff/menu--v1.png"
+                            alt="Menu"
                         />
                     </button>
                     <Menu dropdown={select} />

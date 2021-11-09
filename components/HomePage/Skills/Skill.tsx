@@ -5,6 +5,7 @@ const Skill = ({ image, name }: any) => {
                 <div className="py-3 px-14">
                     <img
                         src={image}
+                        alt={name}
                         className="h-14 mx-auto"
                     />
                 </div>
