@@ -1,12 +1,14 @@
 import About from '../components/HomePage/About';
 import Home from '../components/HomePage/Home';
-// import axios from 'axios';
+import axios from 'axios';
+import Skills from '../components/HomePage/Skills';
 
 const HomePage = ({ about }: any) => {
   return (
     <div className='bg-main'>
       <Home />
       <About />
+      <Skills />
     </div>
   )
 }
