@@ -1,66 +1,8 @@
 import { useState } from "react"
 import Skill from "./Skill"
 
-const Skills = () => {
+const Skills = ({ data }: any) => {
     const [more, setMore] = useState(false)
-    const data = [
-        {
-            image: '/Skills/js.svg',
-            name: 'JavaScript'
-        },
-        {
-            image: '/Skills/ts.svg',
-            name: 'TypeScript'
-        },
-        {
-            image: '/Skills/node.svg',
-            name: 'Node JS'
-        },
-        {
-            image: '/Skills/express.svg',
-            name: 'Express'
-        },
-        {
-            image: '/Skills/nextjs.svg',
-            name: 'NextJS'
-        },
-        {
-            image: '/Skills/mongodb.svg',
-            name: 'MongoDB'
-        },
-        {
-            image: '/Skills/react.svg',
-            name: 'React'
-        },
-        {
-            image: '/Skills/Adobe_Photoshop_CC.svg',
-            name: 'Abobe Photoshop CC'
-        },
-        {
-            image: '/Skills/Google_Cloud_Platform.svg',
-            name: 'Google Cloud Platform'
-        },
-        {
-            image: '/Skills/Amazon_Web_Services.svg',
-            name: 'Amazon Web Services',
-        },
-        {
-            image: '/Skills/HTML5.svg',
-            name: 'HTML 5'
-        },
-        {
-            image: '/Skills/CSS3.svg',
-            name: 'CSS 3',
-        },
-        {
-            image: '/Skills/C++.svg',
-            name: 'C++'
-        },
-        {
-            image: '/Skills/Python.svg',
-            name: 'Python',
-        },
-    ]
     const showMore = () => {
         setMore(!more);
     }
@@ -70,7 +12,7 @@ const Skills = () => {
                 SKILLS
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 mx-16">
-                {data.map((d, i) => {
+                {data.map((d: any, i: any) => {
                     if (more)
                         return (
                             <Skill key={i} image={d.image} name={d.name} />
@@ -89,6 +31,5 @@ const Skills = () => {
         </div>
     )
 }
-
 
 export default Skills

@@ -3,23 +3,23 @@ import Home from '../components/HomePage/Home';
 import axios from 'axios';
 import Skills from '../components/HomePage/Skills';
 
-const HomePage = ({ about }: any) => {
+const HomePage = ({ skills }: any) => {
   return (
     <div className='bg-main'>
       <Home />
       <About />
-      <Skills />
+      <Skills data={skills} />
     </div>
   )
 }
 
-// export const getServerSideProps = async () => {
-//   const data = await axios.get(`${process.env.DOMAIN}/api/about-section`);
-//   return {
-//     props: {
-//       about: data.data
-//     }
-//   }
-// }
+export const getServerSideProps = async () => {
+  const data = await axios.get(`${process.env.DOMAIN}/api/skill-section`);
+  return {
+    props: {
+      skills: data.data
+    }
+  }
+}
 
 export default HomePage;
