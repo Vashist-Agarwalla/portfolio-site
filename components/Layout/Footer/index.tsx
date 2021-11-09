@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <div className="lg:flex bg-footer lg:h-28 text-white font-display">
+        <div className="lg:flex bg-other lg:h-28 text-white font-display">
             <div className="lg:flex-1 text-center text-xl py-6 lg:py-10">
                 Made by Vashist Agarwalla
             </div>
@@ -15,6 +15,7 @@ const Footer = () => {
                         >
                             <img
                                 src="github-480.png"
+                                alt="Github"
                                 className='h-10 my-4'
                             />
                         </a>
@@ -28,6 +29,7 @@ const Footer = () => {
                         >
                             <img
                                 src="linkedin-480.png"
+                                alt="LinkedIn"
                                 className='h-10 my-4'
                             />
                         </a>
@@ -41,6 +43,7 @@ const Footer = () => {
                         >
                             <img
                                 src="instagram-256.png"
+                                alt="Instagram"
                                 className='h-10 my-4'
                             />
                         </a>

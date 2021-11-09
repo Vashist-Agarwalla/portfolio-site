@@ -38,13 +38,14 @@ const Navbar = () => {
     })
 
     return (
-        <nav className={`fixed left-0 right-0 pr-10 ${navCSS}`}>
+        <nav className={`fixed left-0 right-0 pr-10 z-50 ${navCSS}`}>
             <div className='py-1 text-white text-xl font-semibold'>
                 <div className='flex flex-row w-full'>
                     <Logo dropdown={select} />
                     <button className="lg:hidden absolute right-10" onClick={controlSelect}>
                         <img
                             src="https://img.icons8.com/material-outlined/24/ffffff/menu--v1.png"
+                            alt="Menu"
                         />
                     </button>
                     <Menu dropdown={select} />
