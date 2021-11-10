@@ -6,7 +6,7 @@ import Achievements from '../components/HomePage/Achievements';
 
 const HomePage = ({ skills, achievements }: any) => {
   return (
-    <div className='bg-main'>
+    <div>
       <Home />
       <About />
       <Skills data={skills} />
