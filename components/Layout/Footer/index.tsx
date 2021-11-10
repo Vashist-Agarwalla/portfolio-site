@@ -14,7 +14,7 @@ const Footer = () => {
                             title="Github | Vashist-Agarwalla"
                         >
                             <img
-                                src="github-480.png"
+                                src="/github-480.png"
                                 alt="Github"
                                 className='h-10 my-4'
                             />
@@ -28,7 +28,7 @@ const Footer = () => {
                             title="LinkedIn | Vashist-Agarwalla"
                         >
                             <img
-                                src="linkedin-480.png"
+                                src="/linkedin-480.png"
                                 alt="LinkedIn"
                                 className='h-10 my-4'
                             />
@@ -42,7 +42,7 @@ const Footer = () => {
                             title="Instagram | Vashist-Agarwalla"
                         >
                             <img
-                                src="instagram-256.png"
+                                src="/instagram-256.png"
                                 alt="Instagram"
                                 className='h-10 my-4'
                             />
