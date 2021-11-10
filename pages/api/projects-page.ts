@@ -8,7 +8,6 @@ function sortByProperty(property: any) {
             return 1;
         else if (a[property] < b[property])
             return -1;
-
         return 0;
     }
 }
@@ -16,21 +15,15 @@ function sortByProperty(property: any) {
 const handler = nc()
     .get(async (req: NextApiRequest, res: NextApiResponse) => {
         const { client, db } = await connectToDatabase();
-        const skills = await db
-            .collection("Skills")
+        const projects = await db
+            .collection("Projects")
             .find({})
             .toArray()
-        skills.sort(sortByProperty('pid'))
-        const achievements = await db
-            .collection("Achievements")
-            .find({})
-            .toArray()
-        achievements.sort(sortByProperty('pid'))
-        achievements.reverse()
+        projects.sort(sortByProperty('pid'))
         if (process.env.isProduction === "true"){
             client.close()
         }
-        res.json([skills, achievements])
+        res.json([projects])
     })
 
 export default handler;
