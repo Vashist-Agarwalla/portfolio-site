@@ -7,7 +7,7 @@ const Achievement = ({ data }: any) => {
     
     return (
         <div className="my-5 mx-2 lg:mx-14 filter drop-shadow-lg font-display" onClick={showModel}>
-            <div className="flex bg-other hover:bg-secondary rounded-lg sm:h-36 lg:h-40 xl:h-32 text-secondary hover:text-black">
+            <div className="flex transition duration-500 ease-in-out bg-other hover:bg-secondary rounded-lg sm:h-36 lg:h-40 xl:h-32 text-secondary hover:text-black">
                 <div className="flex-1 p-2 sm:py-4 lg:p-4">
                     <img
                         src={data.image}
