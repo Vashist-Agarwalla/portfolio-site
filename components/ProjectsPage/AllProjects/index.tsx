@@ -1,28 +1,6 @@
 import Project from "./Project";
 
 const AllProjects = ({ data }: any) => {
-    // const data = [
-    //     {
-    //         "name": "Teach Analogy Home Page",
-    //         "image": "https://s3.ap-south-1.amazonaws.com/me.vashist/Projects/0001-TechAnalogy-Home.png"
-    //     },
-    //     {
-    //         "name": "Teach Analogy Home Page",
-    //         "image": "https://s3.ap-south-1.amazonaws.com/me.vashist/Projects/0002-TechAnalogy-EventsPortal.png"
-    //     },
-    //     {
-    //         "name": "Teach Analogy Home Page",
-    //         "image": "https://s3.ap-south-1.amazonaws.com/me.vashist/Projects/0003-AlexaDevSRM-HomePage.png"
-    //     },
-    //     {
-    //         "name": "Teach Analogy Home Page",
-    //         "image": "https://s3.ap-south-1.amazonaws.com/me.vashist/Projects/0004-AlexaDevSRM-Skilltober.png"
-    //     },
-    //     {
-    //         "name": "Teach Analogy Home Page",
-    //         "image": "https://s3.ap-south-1.amazonaws.com/me.vashist/Projects/0005-Heiphen.png"
-    //     }
-    // ]
     return (
         <div className="my-16">
             <h1 className="text-secondary text-center text-5xl lg:text-5xl font-semibold">
