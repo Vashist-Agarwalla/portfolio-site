@@ -14,12 +14,15 @@ function sortByProperty(property: any) {
 
 const handler = nc()
     .get(async (req: NextApiRequest, res: NextApiResponse) => {
-        const { db } = await connectToDatabase();
+        const { client, db } = await connectToDatabase();
         const projects = await db
             .collection("Projects")
             .find({})
             .toArray()
         projects.sort(sortByProperty('pid'))
+        if (process.env.isProduction === "true"){
+            client.close()
+        }
         res.json([projects])
     })
 

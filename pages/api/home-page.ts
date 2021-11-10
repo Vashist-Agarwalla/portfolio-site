@@ -15,7 +15,7 @@ function sortByProperty(property: any) {
 
 const handler = nc()
     .get(async (req: NextApiRequest, res: NextApiResponse) => {
-        const { db } = await connectToDatabase();
+        const { client, db } = await connectToDatabase();
         const skills = await db
             .collection("Skills")
             .find({})
@@ -27,6 +27,9 @@ const handler = nc()
             .toArray()
         achievements.sort(sortByProperty('pid'))
         achievements.reverse()
+        if (process.env.isProduction === "true"){
+            client.close()
+        }
         res.json([skills, achievements])
     })
 
