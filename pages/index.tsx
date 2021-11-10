@@ -4,22 +4,23 @@ import axios from 'axios';
 import Skills from '../components/HomePage/Skills';
 import Achievements from '../components/HomePage/Achievements';
 
-const HomePage = ({ skills }: any) => {
+const HomePage = ({ skills, achievements }: any) => {
   return (
     <div className='bg-main'>
       <Home />
       <About />
       <Skills data={skills} />
-      <Achievements />
+      <Achievements data={achievements} />
     </div>
   )
 }
 
 export const getServerSideProps = async () => {
-  const data = await axios.get(`${process.env.DOMAIN}/api/skill-section`);
+  const data = await axios.get(`${process.env.DOMAIN}/api/home-page`);
   return {
     props: {
-      skills: data.data
+      skills: data.data[0],
+      achievements: data.data[1]
     }
   }
 }
