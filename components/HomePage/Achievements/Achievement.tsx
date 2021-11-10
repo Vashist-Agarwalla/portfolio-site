@@ -1,6 +1,12 @@
+import { useState } from 'react';
+import { Modal } from 'react-responsive-modal';
+
 const Achievement = ({ data }: any) => {
+    const [open, setOpen] = useState(false);
+    const showModel = () => setOpen(!open);
+    
     return (
-        <div className="my-5 mx-2 lg:mx-14 filter drop-shadow-lg font-display">
+        <div className="my-5 mx-2 lg:mx-14 filter drop-shadow-lg font-display" onClick={showModel}>
             <div className="flex bg-other hover:bg-secondary rounded-lg sm:h-36 lg:h-40 xl:h-32 text-secondary hover:text-black">
                 <div className="flex-1 p-2 sm:py-4 lg:p-4">
                     <img
@@ -15,6 +21,13 @@ const Achievement = ({ data }: any) => {
                     <p className="text-sm pt-2 sm:pt-3 lg:pt-2 text-white font-light">{data.description}</p>
                 </div>
             </div>
+            <Modal open={open} onClose={showModel} center>
+                <img
+                    src={data.certificate}
+                    alt={data.name}
+                    className='rounded-md'
+                />
+            </Modal>
         </div>
     )
 }
