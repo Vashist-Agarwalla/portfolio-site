@@ -1,5 +1,6 @@
 import AllProjects from "../../components/ProjectsPage/AllProjects";
-import axios from "axios";
+import { GetStaticProps } from "next";
+import { projectsPage } from "../api/projects-page";
 
 const ProjectsPage = ({ projects }: any) => {
     return (
@@ -9,11 +10,11 @@ const ProjectsPage = ({ projects }: any) => {
     )
 }
 
-export const getServerSideProps = async () => {
-    const data = await axios.get(`${process.env.DOMAIN}/api/projects-page`);
+export const getStaticProps: GetStaticProps = async (context) => {
+    const data = await projectsPage()
     return {
         props: {
-            projects: data.data[0],
+            projects: data.projects,
         }
     }
 }

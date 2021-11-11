@@ -13,6 +13,25 @@ function sortByProperty(property: any) {
     }
 }
 
+export const homePage = async () => {
+    const { client, db } = await connectToDatabase();
+    const skills = await db
+        .collection("Skills")
+        .find({})
+        .toArray()
+    skills.sort(sortByProperty('pid'))
+    const achievements = await db
+        .collection("Achievements")
+        .find({})
+        .toArray()
+    achievements.sort(sortByProperty('pid'))
+    achievements.reverse()
+    if (process.env.isProduction === "true") {
+        client.close()
+    }
+    return JSON.parse(JSON.stringify({ skills, achievements }))
+}
+
 const handler = nc()
     .get(async (req: NextApiRequest, res: NextApiResponse) => {
         const { client, db } = await connectToDatabase();
@@ -27,7 +46,7 @@ const handler = nc()
             .toArray()
         achievements.sort(sortByProperty('pid'))
         achievements.reverse()
-        if (process.env.isProduction === "true"){
+        if (process.env.isProduction === "true") {
             client.close()
         }
         res.json([skills, achievements])
