@@ -1,6 +1,8 @@
 import Skill from "../../HomePage/Skills/Skill";
+import Redirect from "./Redirect";
 
 const ProjectDetails = ({ data }: any) => {
+
     return (
         <div className="mx-10 lg:mx-14 my-14">
             <div className="lg:flex">
@@ -16,6 +18,7 @@ const ProjectDetails = ({ data }: any) => {
                         alt={data.name}
                         className="rounded-md"
                     />
+                    <Redirect link={data.link} github={data.github}/>
                 </div>
             </div>
             <h2 className="text-center text-3xl uppercase font-semibold text-secondary py-10">
