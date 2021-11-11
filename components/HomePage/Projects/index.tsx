@@ -14,7 +14,7 @@ const Projects = ({ data }: any) => {
             </div>
             <Link href="/projects">
                 <div className="transition duration-500 ease-in-out bg-other mt-5 mx-auto w-48 border border-secondary rounded text-center text-white hover:text-black bg-other hover:bg-secondary transform hover:scale-125">
-                    <button className="h-12 text-xl">
+                    <button className="h-12 text-lg">
                         View All Projects
                     </button>
                 </div>
