@@ -26,10 +26,16 @@ export const homePage = async () => {
         .toArray()
     achievements.sort(sortByProperty('pid'))
     achievements.reverse()
+    const projects = await db
+        .collection("Projects")
+        .find({ homePage: true })
+        .toArray()
+    projects.sort(sortByProperty('pid'))
+
     if (process.env.isProduction === "true") {
         client.close()
     }
-    return JSON.parse(JSON.stringify({ skills, achievements }))
+    return JSON.parse(JSON.stringify({ skills, achievements, projects }))
 }
 
 const handler = nc()
