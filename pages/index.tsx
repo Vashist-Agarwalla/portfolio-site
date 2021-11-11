@@ -1,8 +1,9 @@
 import About from '../components/HomePage/About';
 import Home from '../components/HomePage/Home';
-import axios from 'axios';
 import Skills from '../components/HomePage/Skills';
 import Achievements from '../components/HomePage/Achievements';
+import { GetStaticProps } from "next";
+import { homePage } from './api/home-page';
 
 const HomePage = ({ skills, achievements }: any) => {
   return (
@@ -15,12 +16,12 @@ const HomePage = ({ skills, achievements }: any) => {
   )
 }
 
-export const getServerSideProps = async () => {
-  const data = await axios.get(`${process.env.DOMAIN}/api/home-page`);
+export const getStaticProps: GetStaticProps = async (context) => {
+  const data = await homePage()
   return {
     props: {
-      skills: data.data[0],
-      achievements: data.data[1]
+      skills: data.skills,
+      achievements: data.achievements
     }
   }
 }

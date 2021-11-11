@@ -20,7 +20,7 @@ const Menu = (props: any) => {
                         </Link>
                     </div>
                     <div className="mx-auto my-4">
-                        <Link href='/#projects'>
+                        <Link href='/projects'>
                             <a>Projects</a>
                         </Link>
                     </div>
@@ -47,7 +47,7 @@ const Menu = (props: any) => {
                     </Link>
                 </div>
                 <div className="m-auto ">
-                    <Link href='/#projects'>
+                    <Link href='/projects'>
                         <a>Projects</a>
                     </Link>
                 </div>
