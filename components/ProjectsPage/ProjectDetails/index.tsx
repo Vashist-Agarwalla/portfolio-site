@@ -13,6 +13,7 @@ const ProjectDetails = ({ data }: any) => {
                 <div className="flex-1 filter drop-shadow-xl py-8 px-0 sm:px-10 lg:px-20">
                     <img
                         src={data.image}
+                        alt={data.name}
                         className="rounded-md"
                     />
                 </div>
