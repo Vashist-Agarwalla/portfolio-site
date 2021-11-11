@@ -1,5 +1,6 @@
 import { GetStaticProps } from "next";
 import ProjectDetails from "../../components/ProjectsPage/ProjectDetails";
+import { projectDetails } from "../api/project-details";
 import { projectsPage } from "../api/projects-page";
 
 export const getStaticPaths = async () => {
@@ -16,9 +17,11 @@ export const getStaticPaths = async () => {
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {
+    const id: any = context.params;
+    const data = await projectDetails(id.project);
     return {
         props: {
-            project: '1'
+            project: data[0]
         }
     }
 }
@@ -26,7 +29,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 const Data = ({ project }: any) => {
     return (
         <div className="pt-28">
-            <ProjectDetails />
+            <ProjectDetails data={project} />
         </div>
     )
 }
