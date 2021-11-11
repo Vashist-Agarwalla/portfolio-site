@@ -7,7 +7,7 @@ export const getStaticPaths = async () => {
     const data = await projectsPage();
     const paths = data.projects.map((d: any, i: any) => {
         return {
-            params: { project: d.pid.toString() }
+            params: { project: d.slug }
         }
     })
     return {
@@ -17,8 +17,8 @@ export const getStaticPaths = async () => {
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {
-    const id: any = context.params;
-    const data = await projectDetails(id.project);
+    const slug: any = context.params;
+    const data = await projectDetails(slug.project);
     return {
         props: {
             project: data[0]
