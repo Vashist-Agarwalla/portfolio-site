@@ -1,11 +1,13 @@
 import WorkExperience from "../components/KnowMorePage/WorkExprience";
+import Clubs from "../components/KnowMorePage/Clubs";
 import { knowMorePage } from "./api/know-more-page";
 import { GetStaticProps } from "next";
 
-const KnowMorePage = ({ experience }: any) => {
+const KnowMorePage = ({ experience, clubs }: any) => {
     return (
         <div className="pt-28">
             <WorkExperience data={experience} />
+            <Clubs data={clubs} />
         </div>
     )
 }
@@ -15,6 +17,7 @@ export const getStaticProps: GetStaticProps = async () => {
     return {
         props: {
             experience: data.experience,
+            clubs: data.clubs
         }
     }
 }
