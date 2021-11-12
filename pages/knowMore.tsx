@@ -1,5 +1,6 @@
 import WorkExperience from "../components/KnowMorePage/WorkExprience";
 import Clubs from "../components/KnowMorePage/Clubs";
+import Certifications from "../components/KnowMorePage/Certifications";
 import { knowMorePage } from "./api/know-more-page";
 import { GetStaticProps } from "next";
 
@@ -8,6 +9,7 @@ const KnowMorePage = ({ experience, clubs }: any) => {
         <div className="pt-28">
             <WorkExperience data={experience} />
             <Clubs data={clubs} />
+            <Certifications />
         </div>
     )
 }
