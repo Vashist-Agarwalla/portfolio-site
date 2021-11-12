@@ -25,8 +25,14 @@ export const knowMorePage = async () => {
         .find({})
         .toArray()
     clubs.sort(sortByProperty('pid'))
+    const certificates = await db
+        .collection("Certificates")
+        .find({})
+        .toArray()
+    certificates.sort(sortByProperty('pid'))
+    certificates.reverse()
     if (process.env.isProduction === "true") {
         client.close()
     }
-    return JSON.parse(JSON.stringify({ experience, clubs }))
+    return JSON.parse(JSON.stringify({ experience, clubs, certificates }))
 }
