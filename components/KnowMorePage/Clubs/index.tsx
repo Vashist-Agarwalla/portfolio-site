@@ -10,7 +10,7 @@ const Clubs = ({ data }: any) => {
     }
 
     return (
-        <div>
+        <div className="pt-8">
             <h1 className="my-10 text-secondary text-center text-5xl lg:text-5xl font-semibold">
                 CLUBS
             </h1>
