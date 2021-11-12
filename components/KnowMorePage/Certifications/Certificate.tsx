@@ -16,7 +16,7 @@ const Certificate = ({ data }: any) => {
                     />
                 </div>
                 <div className="flex-2 lg:flex-3 p-2 sm:py-3 sm:pr-5 lg:pr-0 lg:p-3">
-                    <h1 className="text-xl font-semibold">{data.name}</h1>
+                    <h1 className="text-xl font-semibold lg:mt-1">{data.name}</h1>
                     <p className="pt-2 sm:pt-3 lg:pt-2 text-white">{data.provider}</p>
                     <h2 className="pt-1 sm:pt-2 lg:pt-1 text-white italic font-light">{data.date}</h2>
                 </div>

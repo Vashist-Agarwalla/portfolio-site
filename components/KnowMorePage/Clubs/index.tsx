@@ -11,7 +11,7 @@ const Clubs = ({ data }: any) => {
 
     return (
         <div className="pt-8">
-            <h1 className="my-10 text-secondary text-center text-5xl lg:text-5xl font-semibold">
+            <h1 className="my-10 text-secondary text-center text-4xl sm:text-5xl lg:text-5xl font-semibold">
                 CLUBS
             </h1>
             <div className="md:flex my-14 mx-2 md:mx-10 lg:mx-14">
