@@ -6,11 +6,11 @@ import Projects from '../components/HomePage/Projects';
 import { GetStaticProps } from "next";
 import { homePage } from './api/home-page';
 
-const HomePage = ({ skills, achievements, projects }: any) => {
+const HomePage = ({ about, skills, achievements, projects }: any) => {
   return (
     <div>
       <Home />
-      <About />
+      <About data={about} />
       <Skills data={skills} />
       <Achievements data={achievements} />
       <Projects data={projects} />
@@ -22,6 +22,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const data = await homePage()
   return {
     props: {
+      about: data.about[0],
       skills: data.skills,
       achievements: data.achievements,
       projects: data.projects

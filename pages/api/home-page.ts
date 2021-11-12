@@ -15,6 +15,10 @@ function sortByProperty(property: any) {
 
 export const homePage = async () => {
     const { client, db } = await connectToDatabase();
+    const about = await db
+        .collection("About")
+        .find({})
+        .toArray()
     const skills = await db
         .collection("Skills")
         .find({})
@@ -35,7 +39,7 @@ export const homePage = async () => {
     if (process.env.isProduction === "true") {
         client.close()
     }
-    return JSON.parse(JSON.stringify({ skills, achievements, projects }))
+    return JSON.parse(JSON.stringify({ about, skills, achievements, projects }))
 }
 
 const handler = nc()
