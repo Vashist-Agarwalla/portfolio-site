@@ -31,8 +31,5 @@ export const knowMorePage = async () => {
         .toArray()
     certificates.sort(sortByProperty('pid'))
     certificates.reverse()
-    if (process.env.isProduction === "true") {
-        client.close()
-    }
     return JSON.parse(JSON.stringify({ experience, clubs, certificates }))
 }

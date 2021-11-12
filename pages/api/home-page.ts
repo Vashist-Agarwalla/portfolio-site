@@ -35,10 +35,6 @@ export const homePage = async () => {
         .find({ homePage: true })
         .toArray()
     projects.sort(sortByProperty('pid'))
-
-    if (process.env.isProduction === "true") {
-        client.close()
-    }
     return JSON.parse(JSON.stringify({ about, skills, achievements, projects }))
 }
 
@@ -56,9 +52,6 @@ const handler = nc()
             .toArray()
         achievements.sort(sortByProperty('pid'))
         achievements.reverse()
-        if (process.env.isProduction === "true") {
-            client.close()
-        }
         res.json([skills, achievements])
     })
 

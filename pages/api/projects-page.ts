@@ -19,9 +19,6 @@ export const projectsPage = async () => {
         .find({})
         .toArray()
     projects.sort(sortByProperty('pid'))
-    if (process.env.isProduction === "true") {
-        client.close()
-    }
     return JSON.parse(JSON.stringify({projects}))
 }
 
@@ -33,9 +30,6 @@ const handler = nc()
             .find({})
             .toArray()
         projects.sort(sortByProperty('pid'))
-        if (process.env.isProduction === "true"){
-            client.close()
-        }
         res.json([projects])
     })
 
