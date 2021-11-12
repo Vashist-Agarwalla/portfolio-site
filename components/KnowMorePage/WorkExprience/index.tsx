@@ -1,4 +1,4 @@
-import Card from "./Card"
+import Card from "../Card"
 import { useState } from "react"
 
 const WorkExperience = ({ data }: any) => {
