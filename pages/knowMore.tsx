@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import WorkExperience from "../components/KnowMorePage/WorkExprience";
 import Clubs from "../components/KnowMorePage/Clubs";
 import Certifications from "../components/KnowMorePage/Certifications";
@@ -7,11 +8,16 @@ import { GetStaticProps } from "next";
 
 const KnowMorePage = ({ experience, clubs, certificates, resume }: any) => {
     return (
-        <div className="pt-28">
-            <WorkExperience data={experience} />
-            <Clubs data={clubs} />
-            <Certifications data={certificates} />
-            <Resume resume={resume} />
+        <div>
+            <Head>
+                <title>Vashist Agarwalla | Know More</title>
+            </Head>
+            <div className="pt-28">
+                <WorkExperience data={experience} />
+                <Clubs data={clubs} />
+                <Certifications data={certificates} />
+                <Resume resume={resume} />
+            </div>
         </div>
     )
 }

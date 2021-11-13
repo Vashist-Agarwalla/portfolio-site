@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import { GetStaticProps } from "next";
 import ProjectDetails from "../../components/ProjectsPage/ProjectDetails";
 import { projectDetails } from "../api/project-details";
@@ -28,8 +29,13 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
 const Data = ({ project }: any) => {
     return (
-        <div className="pt-28">
-            <ProjectDetails data={project} />
+        <div>
+            <div className="pt-28">
+                <Head>
+                    <title>Vashist Agarwalla | {project.name}</title>
+                </Head>
+                <ProjectDetails data={project} />
+            </div>
         </div>
     )
 }
