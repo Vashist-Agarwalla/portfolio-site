@@ -5,6 +5,7 @@ import Achievements from '../components/HomePage/Achievements';
 import Projects from '../components/HomePage/Projects';
 import { GetStaticProps } from "next";
 import { homePage } from './api/home-page';
+import KnowMore from '../components/HomePage/KnowMore';
 
 const HomePage = ({ about, skills, achievements, projects }: any) => {
   return (
@@ -13,6 +14,7 @@ const HomePage = ({ about, skills, achievements, projects }: any) => {
       <About data={about} />
       <Skills data={skills} />
       <Achievements data={achievements} />
+      <KnowMore />
       <Projects data={projects} />
     </div>
   )
