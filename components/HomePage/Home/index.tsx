@@ -28,7 +28,7 @@ const Home = () => {
                     className='mt-4 h-60 lg:ml-32 xl:ml-40 mb-14'
                 />
             </div>
-            <div className='lg:flex-3 font-semibold pt-40 md:pt-44 lg:pt-80 lg:mt-7 lg:ml-24 xl:ml-32 ml-8 lg:ml-0'>
+            <div className='lg:flex-3 font-semibold pt-40 md:pt-44 lg:pt-80 lg:mt-7 md:ml-20 lg:ml-24 xl:ml-32 ml-8 lg:ml-0'>
                 <div className='text-white text-2xl sm:text-3xl lg:text-2xl pt-4'>
                     Hello, I am
                 </div>

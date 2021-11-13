@@ -15,13 +15,26 @@ module.exports = {
         'secondary': '#FFA588'
       },
       flex: {
-        '2' : '2 2 0%',
+        '2': '2 2 0%',
         '3': '3 3 0%',
+      },
+      animation: {
+        moveRight: 'moveRight 1.5s ease-in-out infinite'
+      },
+      keyframes: {
+        moveRight: {
+          '0%,100%': {
+            'margin-left': '0px'
+          },
+          '50%': {
+            'margin-left': '3rem'
+          }
+        }
       }
     },
   },
   variants: {
-    extend: { },
+    extend: {},
   },
   plugins: [],
 }
