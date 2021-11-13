@@ -31,5 +31,9 @@ export const knowMorePage = async () => {
         .toArray()
     certificates.sort(sortByProperty('pid'))
     certificates.reverse()
-    return JSON.parse(JSON.stringify({ experience, clubs, certificates }))
+    const resume = await db
+        .collection("About")
+        .find({})
+        .toArray()
+    return JSON.parse(JSON.stringify({ experience, clubs, certificates, resume }))
 }
