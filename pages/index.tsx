@@ -14,6 +14,8 @@ const HomePage = ({ about, skills, achievements, projects, contact }: any) => {
     <div>
       <Head>
         <title>Vashist Agarwalla</title>
+        <meta property='og:image' content='/Vashist-Logo(FFA588).png'></meta>
+        <meta property='og:description' content='Vashist Agarwalla'></meta>
       </Head>
       <Home />
       <About data={about} />

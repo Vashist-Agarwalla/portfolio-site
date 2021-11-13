@@ -11,6 +11,8 @@ const KnowMorePage = ({ experience, clubs, certificates, resume }: any) => {
         <div>
             <Head>
                 <title>Vashist Agarwalla | Know More</title>
+                <meta property='og:image' content='/Vashist-Logo(FFA588).png'></meta>
+                <meta property='og:description' content='Vashist Agarwalla | Know More'></meta>
             </Head>
             <div className="pt-28">
                 <WorkExperience data={experience} />

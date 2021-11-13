@@ -33,6 +33,8 @@ const Data = ({ project }: any) => {
             <div className="pt-28">
                 <Head>
                     <title>Vashist Agarwalla | {project.name}</title>
+                    <meta property='og:image' content='/Vashist-Logo(FFA588).png'></meta>
+                    <meta property='og:description' content={project.name}></meta>
                 </Head>
                 <ProjectDetails data={project} />
             </div>
