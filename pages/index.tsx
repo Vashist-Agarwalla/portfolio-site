@@ -3,11 +3,12 @@ import Home from '../components/HomePage/Home';
 import Skills from '../components/HomePage/Skills';
 import Achievements from '../components/HomePage/Achievements';
 import Projects from '../components/HomePage/Projects';
+import KnowMore from '../components/HomePage/KnowMore';
+import Contact from '../components/HomePage/Contact';
 import { GetStaticProps } from "next";
 import { homePage } from './api/home-page';
-import KnowMore from '../components/HomePage/KnowMore';
 
-const HomePage = ({ about, skills, achievements, projects }: any) => {
+const HomePage = ({ about, skills, achievements, projects, contact }: any) => {
   return (
     <div>
       <Home />
@@ -16,6 +17,7 @@ const HomePage = ({ about, skills, achievements, projects }: any) => {
       <Achievements data={achievements} />
       <KnowMore />
       <Projects data={projects} />
+      <Contact data={contact} />
     </div>
   )
 }
@@ -27,7 +29,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
       about: data.about[0],
       skills: data.skills,
       achievements: data.achievements,
-      projects: data.projects
+      projects: data.projects,
+      contact: data.contact[0]
     }
   }
 }
