@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import About from '../components/HomePage/About';
 import Home from '../components/HomePage/Home';
 import Skills from '../components/HomePage/Skills';
@@ -11,6 +12,9 @@ import { homePage } from './api/home-page';
 const HomePage = ({ about, skills, achievements, projects, contact }: any) => {
   return (
     <div>
+      <Head>
+        <title>Vashist Agarwalla</title>
+      </Head>
       <Home />
       <About data={about} />
       <Skills data={skills} />
