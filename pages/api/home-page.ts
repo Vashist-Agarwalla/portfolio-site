@@ -35,7 +35,11 @@ export const homePage = async () => {
         .find({ homePage: true })
         .toArray()
     projects.sort(sortByProperty('pid'))
-    return JSON.parse(JSON.stringify({ about, skills, achievements, projects }))
+    const contact = await db
+        .collection("Contact")
+        .find({})
+        .toArray()
+    return JSON.parse(JSON.stringify({ about, skills, achievements, projects, contact }))
 }
 
 const handler = nc()

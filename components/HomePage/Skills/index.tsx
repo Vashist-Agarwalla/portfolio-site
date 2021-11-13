@@ -8,7 +8,7 @@ const Skills = ({ data }: any) => {
     }
     return (
         <div className="py-12">
-            <div className="text-secondary font-semibold text-center text-3xl pb-5">
+            <div className="text-secondary font-semibold text-center text-3xl lg:text-4xl pb-5">
                 SKILLS
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 mx-16">
