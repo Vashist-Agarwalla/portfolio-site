@@ -9,6 +9,7 @@ const ProjectsPage = ({ projects }: any) => {
             <Head>
                 <title>Vashist Agarwalla | Projects</title>
                 <meta property='og:image' content='/Vashist-Logo(FFA588).png'></meta>
+                <link rel="image_src" href="/Vashist-Logo(FFA588).png" />
                 <meta property='og:description' content='Vashist Agarwalla | Projects'></meta>
             </Head>
             <div className="pt-28">

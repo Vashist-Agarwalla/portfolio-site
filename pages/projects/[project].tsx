@@ -34,6 +34,7 @@ const Data = ({ project }: any) => {
                 <Head>
                     <title>Vashist Agarwalla | {project.name}</title>
                     <meta property='og:image' content='/Vashist-Logo(FFA588).png'></meta>
+                    <link rel="image_src" href="/Vashist-Logo(FFA588).png" />
                     <meta property='og:description' content={project.name}></meta>
                 </Head>
                 <ProjectDetails data={project} />
