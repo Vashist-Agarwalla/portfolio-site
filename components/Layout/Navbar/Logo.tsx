@@ -10,6 +10,7 @@ const Logo = (props: any) => {
             <div className='pl-3'>
                 <img
                     src="/Vashist-Logo(FFA588).svg"
+                    alt="Logo"
                     className={`transform duration-500 ${props.scrolled ? 'h-10' : 'h-14 lg:h-20'}`}
                 />
             </div>
