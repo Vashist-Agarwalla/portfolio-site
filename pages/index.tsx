@@ -19,8 +19,8 @@ const HomePage = ({ about, skills, achievements, projects, contact }: any) => {
         <meta property='og:description' content='Vashist Agarwalla' />
         <meta property="og:image:secure_url" content="https://s3.ap-south-1.amazonaws.com/me.vashist/Vashist-Logo.png" />
         <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="300" />
-        <meta property="og:image:height" content="300" />
+        <meta property="og:image:width" content="256" />
+        <meta property="og:image:height" content="256" />
       </Head>
       <Home />
       <About data={about} />
