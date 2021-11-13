@@ -9,22 +9,22 @@ const Menu = (props: any) => {
                     <div className="my-0">
                         <Logo />
                     </div>
-                    <div className="mx-auto my-4">
+                    <div className="mx-auto my-4" onClick={() => { props.porperty(!props.dropdown) }}>
                         <Link href="/#">
                             <a>Home</a>
                         </Link>
                     </div>
-                    <div className="mx-auto my-4">
+                    <div className="mx-auto my-4" onClick={() => { props.porperty(!props.dropdown) }}>
                         <Link href="/#about">
                             <a>About</a>
                         </Link>
                     </div>
-                    <div className="mx-auto my-4">
+                    <div className="mx-auto my-4" onClick={() => { props.porperty(!props.dropdown) }}>
                         <Link href='/projects'>
                             <a>Projects</a>
                         </Link>
                     </div>
-                    <div className="mx-auto my-4">
+                    <div className="mx-auto my-4" onClick={() => { props.porperty(!props.dropdown) }}>
                         <Link href='/#contact'>
                             <a>Contact</a>
                         </Link>
@@ -33,33 +33,33 @@ const Menu = (props: any) => {
             </div>
         )
     } else {
-    return (
-        <div className='hidden lg:contents'>
-            <div className="grid grid-cols-4 gap-0 m-auto mr-0">
-                <div className="mx-12">
-                    <Link href="/#">
-                        <a>Home</a>
-                    </Link>
-                </div>
-                <div className="m-auto ">
-                    <Link href="/#about">
-                        <a>About</a>
-                    </Link>
-                </div>
-                <div className="m-auto ">
-                    <Link href='/projects'>
-                        <a>Projects</a>
-                    </Link>
-                </div>
-                <div className="m-auto ">
-                    <Link href='/#contact'>
-                        <a>Contact</a>
-                    </Link>
+        return (
+            <div className='hidden lg:contents'>
+                <div className="grid grid-cols-4 gap-0 m-auto mr-0">
+                    <div className="mx-12">
+                        <Link href="/#">
+                            <a>Home</a>
+                        </Link>
+                    </div>
+                    <div className="m-auto ">
+                        <Link href="/#about">
+                            <a>About</a>
+                        </Link>
+                    </div>
+                    <div className="m-auto ">
+                        <Link href='/projects'>
+                            <a>Projects</a>
+                        </Link>
+                    </div>
+                    <div className="m-auto ">
+                        <Link href='/#contact'>
+                            <a>Contact</a>
+                        </Link>
+                    </div>
                 </div>
             </div>
-        </div>
-    )
-}
+        )
+    }
 }
 
 export default Menu;
