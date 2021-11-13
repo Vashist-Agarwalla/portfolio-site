@@ -49,7 +49,7 @@ const Navbar = () => {
                             alt="Menu"
                         />
                     </button>
-                    <Menu dropdown={select} />
+                    <Menu dropdown={select} porperty={setSelect} />
                 </div>
             </div>
         </nav>
