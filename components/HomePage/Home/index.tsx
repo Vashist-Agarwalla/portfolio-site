@@ -7,21 +7,42 @@ const Home = () => {
                     alt="Line"
                     className='mt-32 h-60 lg:ml-32 xl:ml-40'
                 />
-                <img
-                    src="github-480.png"
-                    alt="Github"
-                    className='lg:ml-28 xl:ml-36 h-8 my-4'
-                />
-                <img
-                    src="linkedin-480.png"
-                    alt="LinkedIn"
-                    className='lg:ml-28 xl:ml-36 h-8 my-4'
-                />
-                <img
-                    src="instagram-256.png"
-                    alt="Instagram"
-                    className='lg:ml-28 xl:ml-36 h-8 my-4'
-                />
+                <a
+                    href="https://github.com/Vashist-Agarwalla"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Github | Vashist-Agarwalla"
+                >
+                    <img
+                        src="github-480.png"
+                        alt="Github"
+                        className='lg:ml-28 xl:ml-36 h-8 my-4'
+                    />
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/vashist-agarwalla/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="LinkedIn | Vashist-Agarwalla"
+                >
+                    <img
+                        src="linkedin-480.png"
+                        alt="LinkedIn"
+                        className='lg:ml-28 xl:ml-36 h-8 my-4'
+                    />
+                </a>
+                <a
+                    href="https://www.instagram.com/vashist_agarwalla/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Instagram | Vashist-Agarwalla"
+                >
+                    <img
+                        src="instagram-256.png"
+                        alt="Instagram"
+                        className='lg:ml-28 xl:ml-36 h-8 my-4'
+                    />
+                </a>
                 <img
                     src='Line-1.png'
                     alt="Line"
