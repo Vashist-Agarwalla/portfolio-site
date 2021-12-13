@@ -2,10 +2,10 @@
   <img alt="HG_LOGO" src="docs/Vashist-Logo(FFA588).svg" height="72" />
 </div>
 
-<br>
-<p align="center">
-Porfolio
-</p>
+<div align="center">
+  <h2>Porfolio</h2>
+</div>
+
 <p align="center">
     <img src="https://img.shields.io/badge/version-1.0.0-yellowgreen" alt="version 1.0.0"/>
     <img src="https://img.shields.io/badge/license-MIT-brightgreen" alt="license MIT"/>
