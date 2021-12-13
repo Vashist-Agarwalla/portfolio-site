@@ -7,7 +7,7 @@
 </div>
 
 <p align="center">
-    <img src="https://img.shields.io/badge/version-1.0.0-yellowgreen" alt="version 1.0.0"/>
+    <img src="https://img.shields.io/badge/version-1.1.0-yellowgreen" alt="version 1.1.0"/>
     <img src="https://img.shields.io/badge/license-MIT-brightgreen" alt="license MIT"/>
     <img src="https://img.shields.io/badge/author-Vashist%20Agarwalla-orange" alt="author Vashist Agarwalla"/>
 </p>
@@ -60,7 +60,7 @@ $ yarn start
 8. Create a Pull Request, add proper description, screenshots, comments and ask a review from owner/maintainer [For help, click here](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork)
 9. The owner/developer will merge the Pull Request if it aligns with the practises we follow and is valid. One should not merge, and ask for a reviewer to merge it.
 
-Please read `Contributing.md` for details on our code of conduct, and the process for submitting pull requests to us.
+Please read `CONTRIBUTING.md` for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Forking this repo 🚨
 
