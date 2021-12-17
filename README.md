@@ -1,34 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+  <img alt="HG_LOGO" src="docs/Vashist-Logo(FFA588).svg" height="72" />
+</div>
 
-## Getting Started
+<div align="center">
+  <h2>Porfolio</h2>
+</div>
 
-First, run the development server:
+<p align="center">
+    <img src="https://img.shields.io/badge/version-1.1.0-yellowgreen" alt="version 1.1.0"/>
+    <img src="https://img.shields.io/badge/license-MIT-brightgreen" alt="license MIT"/>
+    <img src="https://img.shields.io/badge/author-Vashist%20Agarwalla-orange" alt="author Vashist Agarwalla"/>
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
+## Built With
+
+This website is built with <span style="color: #8b0000;">&hearts;</span> on [NextJS](https://nextjs.org/), statically typed in [TypeScript](https://www.typescriptlang.org/) following the best practises in the market.
+
+## Installation 🔧
+
+Install dependencies
+
+```
+$ yarn
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Building
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```
+$ yarn build
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Running Server 🚀
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Start the development server
 
-## Learn More
+```
+$ yarn dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Start the server
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+$ yarn start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## License 📜
 
-## Deploy on Vercel
+`Portfolio` is available under the MIT license. See the LICENSE file for more info.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing 🤝
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Find an issue to work on from [here](https://github.com/vashist-agarwalla/portfolio-site/issues)
+2. Ask the owner/maintainer for permission to work on the issue.
+3. Fork this repository. [For help, click here](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
+4. Clone the forked repository in your local machine [For help, click here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+5. Create a new branch [For help, click here](https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches)
+6. Add and commit your changes to the new branch [For help, click here](https://stackoverflow.com/questions/14655816/how-to-commit-changes-to-another-pre-existent-branch#:~:text=First%2C%20checkout%20to%20your%20new,show%20up%20on%20the%20remote.)
+7. Please use [GitMoji](https://gitmoji.dev/) for all commits that you make.
+8. Create a Pull Request, add proper description, screenshots, comments and ask a review from owner/maintainer [For help, click here](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork)
+9. The owner/developer will merge the Pull Request if it aligns with the practises we follow and is valid. One should not merge, and ask for a reviewer to merge it.
+
+Please read `CONTRIBUTING.md` for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Forking this repo 🚨
+
+Many people have contacted us asking if they can use this code for their own websites. The answer to that question is usually **yes**, but with credits and approval. There are some cases, such as using this code for a business or something that is greater than a personal project, that we may be less comfortable saying yes to. If in doubt, please don't hesitate to ask us.
+
+We value keeping this site open source, but as you all know, _**plagiarism is bad**_. We spent a non-negligible amount of effort developing, designing, and trying to perfect this iteration of our website, and we are proud of it! All we ask is to not claim this effort as your own.

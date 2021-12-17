@@ -13,10 +13,6 @@ const Contact = ({ data }: any) => {
                     </a>
                 </h2>
             </div>
-            <div className="lg:flex text-2xl">
-                <h2 className="flex-1 lg:text-right text-secondary mx-10 font-display">Number</h2>
-                <h2 className="flex-1 text-white mx-10 font-display">{data.number}</h2>
-            </div>
         </div>
     )
 }
