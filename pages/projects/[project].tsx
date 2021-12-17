@@ -33,7 +33,7 @@ const Data = ({ project }: any) => {
             <div className="pt-28">
                 <Head>
                     <title>Vashist Agarwalla | {project.name}</title>
-                    <meta property='og:image' itemProp='image' content='https://s3.ap-south-1.amazonaws.com/me.vashist/Vashist-Logo.png' />
+                    <meta property='og:image' itemProp='image' content='https://s3.ap-south-1.amazonaws.com/me.vashist/Vashist-Logo-Header.png' />
                     <meta property='og:description' content={project.name} />
                     <meta property="og:image:type" content="image/png" />
                 </Head>
