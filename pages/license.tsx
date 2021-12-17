@@ -6,7 +6,7 @@ const License = () => {
             <Head>
                 <title>Vashist Agarwalla | License</title>
                 <meta property='og:image' itemProp='image' content='https://s3.ap-south-1.amazonaws.com/me.vashist/Vashist-Logo.png' />
-                <meta property='og:description' content='License Page' />
+                <meta property='og:description' content='Vashist Agarwalla | License Page' />
                 <meta property="og:image:type" content="image/png" />
             </Head>
             <div className="pt-44 mx-8 sm:mx-12 lg:mx-36 text-white text-lg font-display">
