@@ -5,13 +5,9 @@ const License = () => {
         <div>
             <Head>
                 <title>Vashist Agarwalla | License</title>
-                <meta property='og:image' itemProp='image' content='https://s3.ap-south-1.amazonaws.com/me.vashist/Vashist-Logo-small.png' />
-                <link rel="image_src" href="/Vashist-Logo(FFA588).png" />
-                <meta property='og:description' content='License Page' />
-                <meta property="og:image:secure_url" content="https://s3.ap-south-1.amazonaws.com/me.vashist/Vashist-Logo.png" />
+                <meta property='og:image' itemProp='image' content='https://s3.ap-south-1.amazonaws.com/me.vashist/Vashist-Logo-Header.png' />
+                <meta property='og:description' content='Vashist Agarwalla | License Page' />
                 <meta property="og:image:type" content="image/png" />
-                <meta property="og:image:width" content="256" />
-                <meta property="og:image:height" content="256" />
             </Head>
             <div className="pt-44 mx-8 sm:mx-12 lg:mx-36 text-white text-lg font-display">
                 <h1 className="text-secondary font-semibold text-3xl md:text-4xl lg:text-5xl text-center">LICENSE</h1>
