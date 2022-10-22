@@ -25,7 +25,7 @@ const Skills = ({ data }: any) => {
             </div>
             <div className="transition duration-500 ease-in-out mt-5 mx-auto w-36 border border-secondary rounded text-center text-white hover:text-black bg-other hover:bg-secondary">
                 <button className="h-10" onClick={showMore}>
-                    View More
+                    View {!more ? "More" : "Less"}
                 </button>
             </div>
         </div>
