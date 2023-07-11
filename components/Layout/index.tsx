@@ -1,5 +1,6 @@
-import Footer from "./Footer"
 import Navbar from "./Navbar"
+import Footer from "./Footer"
+import GoogleAnalytics from "./GoogleAnalytics"
 
 const Layout = ({ children }: any) => {
     return (
@@ -7,6 +8,7 @@ const Layout = ({ children }: any) => {
             <Navbar />
             {children}
             <Footer />
+            <GoogleAnalytics />
         </div>
     )
 }
