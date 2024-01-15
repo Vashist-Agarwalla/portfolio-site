@@ -11,22 +11,22 @@ const Menu = (props: any) => {
                     </div>
                     <div className="mx-auto my-4" onClick={() => { props.porperty(!props.dropdown) }}>
                         <Link href="/#">
-                            <a>Home</a>
+                            Home
                         </Link>
                     </div>
                     <div className="mx-auto my-4" onClick={() => { props.porperty(!props.dropdown) }}>
                         <Link href="/#about">
-                            <a>About</a>
+                            About
                         </Link>
                     </div>
                     <div className="mx-auto my-4" onClick={() => { props.porperty(!props.dropdown) }}>
                         <Link href='/projects'>
-                            <a>Projects</a>
+                            Projects
                         </Link>
                     </div>
                     <div className="mx-auto my-4" onClick={() => { props.porperty(!props.dropdown) }}>
                         <Link href='/#contact'>
-                            <a>Contact</a>
+                            Contact
                         </Link>
                     </div>
                 </div>
@@ -38,22 +38,22 @@ const Menu = (props: any) => {
                 <div className="grid grid-cols-4 gap-0 m-auto mr-0">
                     <div className="mx-12">
                         <Link href="/#">
-                            <a>Home</a>
+                            Home
                         </Link>
                     </div>
                     <div className="m-auto ">
                         <Link href="/#about">
-                            <a>About</a>
+                            About
                         </Link>
                     </div>
                     <div className="m-auto ">
                         <Link href='/projects'>
-                            <a>Projects</a>
+                            Projects
                         </Link>
                     </div>
                     <div className="m-auto ">
                         <Link href='/#contact'>
-                            <a>Contact</a>
+                            Contact
                         </Link>
                     </div>
                 </div>
