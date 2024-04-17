@@ -8,8 +8,9 @@ import KnowMore from '../components/HomePage/KnowMore';
 import Contact from '../components/HomePage/Contact';
 import { GetStaticProps } from "next";
 import { homePage } from './api/home-page';
+import Articles from '../components/HomePage/Articles';
 
-const HomePage = ({ about, skills, achievements, projects, contact }: any) => {
+const HomePage = ({ about, skills, achievements, articles, projects, contact }: any) => {
   return (
     <div>
       <Head>
@@ -21,6 +22,7 @@ const HomePage = ({ about, skills, achievements, projects, contact }: any) => {
       <Home />
       <About data={about} />
       <Skills data={skills} />
+      <Articles data={articles} />
       <Achievements data={achievements} />
       <KnowMore />
       <Projects data={projects} />
@@ -36,6 +38,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
       about: data.about[0],
       skills: data.skills,
       achievements: data.achievements,
+      articles: data.articles,
       projects: data.projects,
       contact: data.contact[0]
     }

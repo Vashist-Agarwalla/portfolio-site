@@ -30,6 +30,12 @@ export const homePage = async () => {
         .toArray()
     achievements.sort(sortByProperty('pid'))
     achievements.reverse()
+    const articles = await db
+        .collection("Articles")
+        .find({})
+        .toArray()
+    articles.sort(sortByProperty('pid'))
+    articles.reverse()    
     const projects = await db
         .collection("Projects")
         .find({ homePage: true })
@@ -39,7 +45,7 @@ export const homePage = async () => {
         .collection("Contact")
         .find({})
         .toArray()
-    return JSON.parse(JSON.stringify({ about, skills, achievements, projects, contact }))
+    return JSON.parse(JSON.stringify({ about, skills, achievements, articles, projects, contact }))
 }
 
 const handler = nc()
