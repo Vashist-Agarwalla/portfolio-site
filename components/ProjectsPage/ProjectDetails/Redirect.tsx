@@ -1,4 +1,8 @@
 const Redirect = ({ link, github }: any) => {
+    if (!link && !github) {
+        return null;
+    }
+    
     if (link && github) {
         return (
             <div className="md:flex mt-6">
@@ -6,7 +10,7 @@ const Redirect = ({ link, github }: any) => {
                     <a
                         href={link}
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="noopener"
                         title="Page"
 
                     >
@@ -21,7 +25,7 @@ const Redirect = ({ link, github }: any) => {
                     <a
                         href={github}
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="noopener"
                         title="Github"
 
                     >
@@ -34,15 +38,14 @@ const Redirect = ({ link, github }: any) => {
                 </div>
             </div>
         )
-    }
-    else if (link) {
+    } else if (link) {
         return (
             <div className="flex mt-6">
                 <div className="flex-1">
                     <a
                         href={link}
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="noopener"
                         title="Page"
 
                     >
@@ -55,17 +58,15 @@ const Redirect = ({ link, github }: any) => {
                 </div>
             </div>
         )
-    }
-    else {
+    } else {
         return (
             <div className="flex mt-6">
                 <div className="flex-1">
                     <a
                         href={github}
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="noopener"
                         title="Page"
-
                     >
                         <button
                             className="w-full h-14 border-2 border-secondary text-white transition duration-500 ease-in-out hover:bg-secondary rounded-md"
