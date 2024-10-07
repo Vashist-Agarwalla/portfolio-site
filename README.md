@@ -7,7 +7,7 @@
 </div>
 
 <p align="center">
-    <img src="https://img.shields.io/badge/version-1.1.0-yellowgreen" alt="version 1.1.0"/>
+    <img src="https://img.shields.io/badge/version-1.2.1-yellowgreen" alt="version 1.2.1"/>
     <img src="https://img.shields.io/badge/license-MIT-brightgreen" alt="license MIT"/>
     <img src="https://img.shields.io/badge/author-Vashist%20Agarwalla-orange" alt="author Vashist Agarwalla"/>
 </p>
